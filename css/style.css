@@ -11,7 +11,7 @@
 	text-align:center;
 }
 .heading{
-	font-size:32px;
+	font-size:2rem;
 	font-weight:bold;
 	padding:20px 0;
 }
@@ -100,8 +100,8 @@ header{
 	box-shadow:0 0 29px #12426514;
 	border-radius:6px;
 	transition:all 0.3s ease;
-	margin-bottom:30px;
 	background:white;
+	height: 100%;
 }
 .banner .info:hover{
 	transform:scale(1.1);
@@ -196,8 +196,6 @@ header{
 /*---------------testimonials starts--------*/
 .testimonial .detail{
 	background:#f3f9fd;
-	text-align:center;
-	font-style:italic;
 	padding:30px 20px;
 }
 .testimonial .triangle{
@@ -220,24 +218,21 @@ header{
 	transform:translate(7px,7px);
 }
 .testimonial .image{
-	position:relative;
-	text-align:center;
-	padding-top:120px;}
+	padding-top:110px;
+}
+.testimonial .image h3{
+	color:black;
+	font-size:18px;
+	font-weight:600;
+}
 .testimonial .image h4{
 	color:#999;
 	font-size:14px;
-	padding-top:6px;
 }
 .testimonial .image img{
-	position:absolute;
-	top:0;
-	left:50%;
 	width:90px;
 	height:90px;
-	border-radius:50%;
 	display:block;
-	transform:translateX(-50%);
-	margin-top:20px;
 }
 
 
@@ -357,8 +352,29 @@ header{
 	color:#2487ce;
 }
 /*------------pricing end-----------*/
-
-
+/*------------team start----------*/
+.card-body{
+	position:relative;
+}
+.team-links {
+	background:#ffffffbd;
+	position:absolute;
+	bottom:100%;
+	left:0;
+	width:100%;
+	visibility:hidden;
+	transition:all 0.3s ease;	
+}
+.card:hover .team-links{visibility:visible;}
+.team-links a{
+	text-decoration:none;
+	display:inline-block;
+	color:#124265;
+	padding:6px;
+	font-size:20px;
+}
+.team-links a:hover{color:#2487ce}
+/*-------------team end----------*/
 /*-------------question start----------*/
 .question{background-color: #f8fbfe;}
 .accordion{
