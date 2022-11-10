@@ -16,7 +16,7 @@
 	padding:20px 0;
 }
 .para{
-	font-size:18px;
+	font-size:1rem;
 	color:#919191;
 }
 h1,h2,h3,h4,h5,h6{color:#124265;}
@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6{color:#124265;}
 /*-------------header start----------*/
 header{
 	padding:8px 0;
-	border-bottom:solid 1px lightgray;
+
 }
 .logo a{
 	font-size:30px;
@@ -376,35 +376,39 @@ header{
 .team-links a:hover{color:#2487ce}
 /*-------------team end----------*/
 /*-------------question start----------*/
+
 .question{background-color: #f8fbfe;}
 .accordion{
 	width:80%;
 	margin:0 auto;
 }
-
 .accordion-item {
-   border:none;
-   margin-bottom:10px;
+    border:none;
+	margin-bottom:10px;
+	padding:10px 0;
 }
 .accordion-button{
-	font-size:18px;
-	font-weight:600px;
+	font-size:1.1rem;
+	font-weight:600;
 }
-.accordion-button:hover{color:#2487ce;}
-
+.accordion-button i{
+	color:#2487ce;
+}
 .accordion-button:not(.collapsed) {
     color:#343a40;
     background-color:white;
     box-shadow:none;
-	font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
 }
 .accordion-button:focus {
-   box-shadow:none;
-   color:#2487ce;
+    box-shadow:none;
+	color:#2487ce;
 }
+
+.accordion-button::after {
+	filter:grayscale()
+}
+.accordion-button:hover{color:#2487ce;}
+
 /*------------question end-----------*/
 
 
