@@ -13,60 +13,28 @@
 .heading{
 	font-size:2rem;
 	font-weight:bold;
-	padding:20px 0;
+	padding:1vh 0;
 }
 .para{
-	font-size:1rem;
+	font-size:1.05rem;
 	color:#919191;
 }
 h1,h2,h3,h4,h5,h6{color:#124265;}
 /*-------------common style ends----------*/
 /*-------------header start----------*/
-header{
-	padding:8px 0;
-
+.navbar a{
+	color:#023b6d;
+	font-size:14px;
 }
-.logo a{
+a.navbar-brand{
 	font-size:30px;
-	color:#023b6d;
 	font-weight:400;
-	text-decoration:none;
 }
-
-.logo-menu{
-	text-align:right;
-}
-.logo-menu li{display:inline-block;}
-.logo-menu a{
-	display:inline-block;
-	text-decoration:none;
-	color:#023b6d;
-	font-size:16px;
-	padding:0 10px;
-}
-.logo-menu li a:hover{color:#3194db;}
-.logo-menu a.button{
+.navbar-nav a.btn{
 	background:#3194db;
 	border:none;
-	border-radius:3px;
 	padding:10px 20px;
 	color:white;
-}
-.logo-menu a.button:hover{
-	background:#3194db;
-	color:white;
-}
-.dropdown{
-	position:relative;
-	padding-right:14px;
-	
-}
-.dropdown a i{
-	position:absolute;
-	top:5px;
-	right:0;
-	
-	
 }
 /*-------------header end----------*/
 /*-------------banner start----------*/
@@ -81,7 +49,6 @@ header{
 .banner .content h1{
 	font-size:3.8rem;
 	font-weight:bold;
-	color:#124265;
 	font-family: "Poppins", sans-serif;
 }
 .banner .content p{
@@ -94,9 +61,8 @@ header{
 	font-size:16px;
 	padding:8px 34px;
 }
-.banner .content a:hover{background:#3194db;}
 .banner .info{
-	padding:60px 25px 40px 25px;
+	padding: 5vw 1vw 3vw 2vw;
 	box-shadow:0 0 29px #12426514;
 	border-radius:6px;
 	transition:all 0.3s ease;
@@ -112,13 +78,13 @@ header{
 }
 .banner .info h3{
 	color:#124265;
-	font-size:18px;
+	font-size:1.05rem;
 	font-weight:bold;
-	padding:16px 0;
+	padding:0.9rem 0;
 }
 .banner .info p{
 	color:#5e5e5e;
-	font-size:17px;
+	font-size:1.05rem;
 }
 /*-------------banner end----------*/
 /*-------------ABOUT start----------*/
@@ -410,6 +376,24 @@ header{
 .accordion-button:hover{color:#2487ce;}
 
 /*------------question end-----------*/
+/*------------contact starts-----------*/
+
+.contact-me{
+	color:#2487ce;
+	
+}
+.contact-me i{
+	font-size:24px;
+	display:inline-block;
+	padding:10px;
+	background:#f3f9fd;
+}
+.contact{
+	top:10%;
+	left:14%;
+	font-size:16px;
+}
+/*------------ contact ends-----------*/
 
 
 /*-------------services end----------*/
