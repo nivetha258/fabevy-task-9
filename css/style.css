@@ -20,34 +20,44 @@
 	color:#919191;
 }
 h1,h2,h3,h4,h5,h6{color:#124265;}
+.form-control:focus {
+    border-color:#ced4da;
+    box-shadow: none;
+}
+a.color-btn{
+	background:#2487ce;
+	border:none;
+	padding:6px 20px;
+	color:white !important;
+}
+a.outline-btn{
+	border:solid 2px #3194db;
+	font-size:14px;
+	color:#3194db;
+	font-weight:600;
+	padding:6px 30px;
+}
+
 /*-------------common style ends----------*/
 /*-------------header start----------*/
 .navbar a{
 	color:#023b6d;
-	font-size:14px;
 }
 a.navbar-brand{
-	font-size:30px;
-	font-weight:400;
-}
-.navbar-nav a.btn{
-	background:#3194db;
-	border:none;
-	padding:10px 20px;
-	color:white;
+	font-size:28px;
+	font-weight:300;
+	font-family:poppins,san-serif;
 }
 /*-------------header end----------*/
 /*-------------banner start----------*/
 .banner{
-	padding:30px 0;
-	box-shadow:0 0 5px lightgray;
-	background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(../image/hero-bg.jpg);
+	background-image:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url(../image/hero-bg.jpg);
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .banner .content h1{
-	font-size:3.8rem;
+	font-size:3.6rem;
 	font-weight:bold;
 	font-family: "Poppins", sans-serif;
 }
@@ -55,14 +65,11 @@ a.navbar-brand{
 	font-size:1.5rem;
 	font-weight:400;
 	color:#5e5e5e;
+	font-family:raleway,san-serif;
 }
-.banner .content a{
-	background:#3194db;
-	font-size:16px;
-	padding:8px 34px;
-}
+.banner .color-btn{padding:8px 40px;}
 .banner .info{
-	padding: 5vw 1vw 3vw 2vw;
+	padding: 4vw 2vw 3vw 2vw;
 	box-shadow:0 0 29px #12426514;
 	border-radius:6px;
 	transition:all 0.3s ease;
@@ -76,11 +83,13 @@ a.navbar-brand{
 	color:#3194db;
 	font-size:2rem;
 }
-.banner .info h3{
+.banner .info a{
 	color:#124265;
 	font-size:1.05rem;
 	font-weight:bold;
 	padding:0.9rem 0;
+	text-decoration:none;
+	display:block;
 }
 .banner .info p{
 	color:#5e5e5e;
@@ -93,15 +102,15 @@ a.navbar-brand{
 }
 .about .info p{
 	line-height:22px;
-	font-weight:300;
+	font-size:18px;
 	color:#5e5e5e;
 }
-.about .info i{font-size:22px}
-.about .info a{
-	font-size:14px;
+.about .info i{
+	font-size:22px;
 	color:#3194db;
-	font-weight:600;
-	padding:6px 24px;
+}
+.about .info a{
+	
 }
 .about .info a:hover{
 	background:#3194db;
@@ -110,7 +119,7 @@ a.navbar-brand{
 /*-------------about end----------*/
 /*-------------count starts----------*/
 .count{
-		padding:80px 0;
+		padding:60px 0;
 		background-color: #f8fbfe;
 }
 .number {
@@ -124,8 +133,10 @@ a.navbar-brand{
 	margin:0;
 }
 .number p{
-	font-size:16px;
+	font-size:14px;
 	color: #1e6ca6;
+	font-weight:600;
+	font-family:raleway,san-serif;
 }
 /*-------------count end----------*/
 /*-------------volume starts----------*/
@@ -133,9 +144,10 @@ a.navbar-brand{
 .volume-content h3{
 	color:#124265;
 	font-size:25px;
+	font-weight:600;
 }
 .volume-content p{
-	font-size:18px;
+	font-size:16px;
 	margin-bottom:10px;
 }
 .volume-content p i{
@@ -263,8 +275,23 @@ a.navbar-brand{
 	color:#2487ce;
 }
 /*------------action end-----------*/
+/*-------------portfolio start----------*/
+.port-img img{
+	margin:20px 0;
+	display:block;
+}
+.portfolio .nav-pills .nav-link.active{
+    color:#2487ce;
+    background-color:unset;
+}
+.portfolio .nav-link {
+	color: #444444;
+	font-size: 16px;
+    font-weight: 600;
+}
+		
 
-
+/*------------portfolio end-----------*/
 /*-------------pricing start----------*/
 .pricing-points,.highlight{
     padding: 40px 20px;
@@ -394,6 +421,52 @@ a.navbar-brand{
 	font-size:16px;
 }
 /*------------ contact ends-----------*/
+/*------------address starts-----------*/
+.address-team{
+	line-height:26px;
+	color:#777777;
+}
+.address-team h3{font-weight:400;}
+.address-links h5{
+	font-weight:700;
+	font-size:16px;
+}
+.address-links ul{
+	list-style:none;
+	padding:0;	
+	line-height:36px;
+}
+.address-links i{color:#3194db;}
+.address-links a{
+	text-decoration:none;
+	display:inline-block;
+	color:#777777;	
+}
+.address-links button{
+	background:#3194db;
+	font-size:18px;
+	padding:8px 26px;
+	color:white;
+}
+/*------------ address ends-----------*/
+/*------------ footer starts-----------*/
+.copyright span{color:#3194db;}
+.footer a{
+	display:inline-block;
+	padding:5px 9px;
+	background:#3194db;
+	font-size:16px;
+	text-decoration:none;
+	color:white;
+	border-radius:5px;
+}
+a.scroll-up{
+	font-size:24px;
+	padding:0 5px;
+	right:10px;
+	bottom:10px;
+}
+/*------------ footer ends-----------*/
 
 
 /*-------------services end----------*/
