@@ -5,6 +5,7 @@
 		<title>template2</title>
 		<link rel="stylesheet" href="icon/icofont.min.css">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -46,7 +47,16 @@
 									</a>
 									<ul class="dropdown-menu">
 										<li><a class="dropdown-item" href="#">Drop Dowm 1</a></li>
-										<li><a class="dropdown-item" href="#">Deep Drop Down</a></li>
+										<li class="dropdown">
+											<a class="dropdown-item" href="#">Deep Drop Down</a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Drop Dowm 1</a></li>
+												<li><a class="dropdown-item" href="#">Deep Drop Down</a></li>
+												<li><a class="dropdown-item" href="#">Drop Dowm 2</a></li>
+												<li><a class="dropdown-item" href="#">Drop Dowm 3</a></li>
+												<li><a class="dropdown-item" href="#">Drop Dowm 4</a></li>
+											</ul>
+										</li>
 										<li><a class="dropdown-item" href="#">Drop Dowm 2</a></li>
 										<li><a class="dropdown-item" href="#">Drop Dowm 3</a></li>
 										<li><a class="dropdown-item" href="#">Drop Dowm 4</a></li>
@@ -123,7 +133,7 @@
 				<div class="col-lg-6">
 					<div class="info">
 						<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<a class="btn btn-outline-primary outline-btn " href="#" role="button">Learn More</a>
+						<a class="btn outline-btn " href="#" role="button">Learn More</a>
 					</div>
 				</div>
 			</div>
@@ -232,8 +242,8 @@
 				<p class="para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 			</div>
 			
-			<div class="row text-center">
-				<div class="col-lg-4">
+			<div class="row owl-carousel owl-theme text-center">
+				<div class="item">
 					<div class="detail fst-italic">
 						<p><i class="icofont-quote-left"></i>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.<i class="icofont-quote-right"></i></p>
 					</div>
@@ -245,7 +255,7 @@
 						<h4>Ceo and Founder</h4>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="item">
 					<div class="detail fst-italic">
 						<p><i class="icofont-quote-left"></i>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.<i class="icofont-quote-right"></i></p>
 					</div>
@@ -257,7 +267,7 @@
 						<h4>Designer</h4>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="item">
 					<div class="detail fst-italic">
 						<p><i class="icofont-quote-left"></i>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.<i class="icofont-quote-right"></i></p>
 					</div>
@@ -267,6 +277,30 @@
 						<img class="rounded-circle position-absolute top-0 start-50 translate-middle-x" src="image/testimonials/testimonials-3.jpg" alt="image">
 						<h3>Jena Karlis</h3>
 						<h4>Store Owner</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="detail fst-italic">
+						<p><i class="icofont-quote-left"></i>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.<i class="icofont-quote-right"></i></p>
+					</div>
+					<div class="triangle">
+					</div>
+					<div class="image mt-3 position-relative">
+						<img class="rounded-circle position-absolute top-0 start-50 translate-middle-x" src="image/testimonials/testimonials-4.jpg" alt="image">
+						<h3>Matt Brandon</h3>
+						<h4>Freelancer</h4>
+					</div>
+				</div>
+				<div class="item">
+					<div class="detail fst-italic">
+						<p><i class="icofont-quote-left"></i>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid..<i class="icofont-quote-right"></i></p>
+					</div>
+					<div class="triangle">
+					</div>
+					<div class="image mt-3 position-relative">
+						<img class="rounded-circle position-absolute top-0 start-50 translate-middle-x" src="image/testimonials/testimonials-5.jpg" alt="image">
+						<h3>John Larson</h3>
+						<h4>Entrepreneur</h4>
 					</div>
 				</div>
 			</div>
@@ -283,7 +317,11 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="service-content">
-						<div class="irregular-shape"><i class="icofont-globe"></i></div>						
+						<div class="irregular-shape">
+						<svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"> <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path> </svg>
+						
+							<i class="icofont-globe"></i>
+						</div>						
 						<h4>Lorem Ipsum</h4>
 						<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
 					</div>
@@ -363,30 +401,128 @@
 			</ul>
 			<div class="tab-content" id="pills-tabContent">
 			    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-					<div class="row port-img">
+					<div class="row">
 							<div class="col-lg-4">
-								<img src="image/portfolio/portfolio-1.jpg" alt="port-img" width="100%">
-								<img src="image/portfolio/portfolio-6.jpg" alt="port-img" width="100%">
-								
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-1.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-6.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>		
 							</div>
 							<div class="col-lg-4">
-								<img src="image/portfolio/portfolio-4.jpg" alt="port-img" width="100%">
-								<img src="image/portfolio/portfolio-2.jpg" alt="port-img" width="100%">
-								<img src="image/portfolio/portfolio-5.jpg" alt="port-img" width="100%">
-								
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-4.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-2.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-5.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="col-lg-4">
-								<img src="image/portfolio/portfolio-7.jpg" alt="port-img" width="100%">
-								<img src="image/portfolio/portfolio-8.jpg" alt="port-img" width="100%">
-								<img src="image/portfolio/portfolio-9.jpg" alt="port-img" width="100%">
-								<img src="image/portfolio/portfolio-3.jpg" alt="port-img" width="100%">
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-7.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-8.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-9.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-3.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
 							</div>
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-					<div class="row port-img">
+					<div class="row portfolio-images">
 						<div class="col-lg-4">
 							<img src="image/portfolio/portfolio-1.jpg" alt="port-img" width="100%">
+							
 						</div>
 						<div class="col-lg-4">
 							<img src="image/portfolio/portfolio-3.jpg" alt="port-img" width="100%">
@@ -398,7 +534,7 @@
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-					<div class="row port-img">
+					<div class="row portfolio-images">
 						<div class="col-lg-4">
 							<img src="image/portfolio/portfolio-4.jpg" alt="port-img" width="100%">
 						</div>
@@ -412,7 +548,7 @@
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab" tabindex="0">
-					<div class="row port-img">
+					<div class="row portfolio-images">
 						<div class="col-lg-4">
 							<img src="image/portfolio/portfolio-2.jpg" alt="port-img" width="100%">
 						</div>
@@ -678,7 +814,7 @@
 							</div>
 							<div><input class="form-control mb-3" type="text" placeholder="Subject" aria-label="default input example"></div>
 							<div><textarea class="form-control mb-3" placeholder="Message" id="exampleFormControlTextarea1" rows="5"></textarea></div>
-							<div class="text-center"><button type="submit" class="btn btn-primary mb-3">Send Message</button></div>
+							<div class="text-center"><button type="submit" class="btn color-btn mb-3">Send Message</button></div>
 						</div>
 					</form>
 				</div>
@@ -762,16 +898,118 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	
+	</section>										
+										<!-------footer end--------------->		
 
-										
-										<!-------footer end--------------->																						
+			<pre>
+			Text in a pre
+			element
+			is displayed    in a fixed-width
+
+			</pre>
+			
+			<!---- progress tag------->	
+			
+			<label for="file">Downloading progress:</label>
+			<progress id="file" value="32" max="100"> 32% </progress>
+			
+			<!---- quotation tag------->	
+			<p>WWF's goal is to:<q>Build a future where people live </q>We hope they succeed.</p>
+			
+						<!---- ruby rt rp tag------->	
+			<ruby>
+				漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+			</ruby>
+			
+			<!---- s tag------->	
+			<p><s>Only 50 tickets left!</s></p>
+			<p>SOLD OUT!</p>
+			
+			
+			<!---- samp tag------->	
+			<p><samp>File not found.<br>Press F1 to continue</samp></p>
+			
+			
+			<!---- script and section tag------->	
+			
+			<section>
+			<script>
+				document.getElementById("demo").innerHTML = "Hello JavaScript!";
+			</script>
+			</section>
+			
+						<!---- select tag------->	
+			<form>
+				<label for="cars">Choose a car:</label>
+				<select name="cars" id="cars">
+				  <option value="volvo">Volvo</option>
+				  <option value="saab">Saab</option>
+				  <option value="mercedes">Mercedes</option>
+				  <option value="audi">Audi</option>
+				</select>							
+			</form>
+						<!---- small tag------->	
+			<p>This is some normal text.</p>
+			<p><small>This is some smaller text.</small></p>
+
+
+						<!---- source tag------->	
+			<audio>
+				<source src="horse.ogg" type="audio/ogg">
+				<source src="horse.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			
+			<!---- span tag------->	
+			<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+			
+			<!---- strike tag------->	
+			
+			<!---- strong tag------->	
+			
+			<strong>This text is important!</strong>
+			
+			<!---- style tag------->	
+			
+			
+			<!---- sub tag------->	
+			
+			<p>This text contains <sub>subscript</sub> text.</p>
+			<!---- summary tag------->	
+			<details>
+				<summary>Epcot Center</summary>
+				<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+			</details>
+			
+			<!---- sup tag------->	
+			<p>This text contains <sup>superscript</sup> text.</p>
+													
 								
-											<!-------js file--------------->
-											
-	<script src="js/owl.carousel.min.js"></script>										
+								<!-------js file--------------->	
+
+	<script src="js/jquery/jquery-3.6.1.min.js"></script>									
+	<script src="js/owl.carousel.min.js"></script>	
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+		$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+	</script>
+	
+	
 											<!-------js ffle end--------------->
 	
 	

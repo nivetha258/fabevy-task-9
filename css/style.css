@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6{color:#124265;}
     border-color:#ced4da;
     box-shadow: none;
 }
-a.color-btn{
+.color-btn{
 	background:#2487ce;
 	border:none;
 	padding:6px 20px;
@@ -37,8 +37,9 @@ a.outline-btn{
 	font-weight:600;
 	padding:6px 30px;
 }
-
+.btn:focus{box-shadow:none;}
 /*-------------common style ends----------*/
+
 /*-------------header start----------*/
 .navbar a{
 	color:#023b6d;
@@ -212,8 +213,15 @@ a.navbar-brand{
 	height:90px;
 	display:block;
 }
-
-
+.owl-theme .owl-dots .owl-dot span {
+    border:1px solid #2487ce;
+	width: 12px;
+    height: 12px;
+	background:none;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background:#2487ce;
+}
 /*-------------testimonials end----------*/
 /*------------services start-----------*/
 .services{background-color: #f8fbfe;}
@@ -276,10 +284,6 @@ a.navbar-brand{
 }
 /*------------action end-----------*/
 /*-------------portfolio start----------*/
-.port-img img{
-	margin:20px 0;
-	display:block;
-}
 .portfolio .nav-pills .nav-link.active{
     color:#2487ce;
     background-color:unset;
@@ -289,9 +293,107 @@ a.navbar-brand{
 	font-size: 16px;
     font-weight: 600;
 }
+.portfolio-images{
+	position:relative;
+}
+.portfolio-images:hover .port-img{
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	opacity:1;
+}
+.portfolio-images:hover .port-img:before{top:30px;left:30px;}
+.portfolio-images:hover .port-img:after{right:30px;bottom:30px;}
+.portfolio-images img{
+		display:block;
+}
+.port-img{
+	position:absolute;
+	top:30px;
+	left:30px;
+	bottom:30px;
+	right:30px;
+	background:#2487ce99;
+	transition:all 0.3s ease;
+	opacity:0;
+}
+.port-img:before{
+	content:"";
+	position:absolute;
+	width:50px;
+	height:50px;
+	top:50px;
+	left:50px;
+	border-top:solid 3px white;
+	border-left:solid 3px white;
+	transition:all 0.8s ease;
+}
+.port-img:after{
+	content:"";
+	position:absolute;
+	width:50px;
+	height:50px;
+	bottom:50px;
+	right:50px;
+	border-bottom:solid 3px white;
+	border-right:solid 3px white;
+	transition:all 0.8s ease;
+}
+.port-links{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:1;
+	color:white;
+}
+.port-links h4{
+	color:white;
+	font-size:18px;
+	font-weight:600;
+}
+.port-links a{
+	display:inline-block;
+	text-decoration:none;
+	color:#ffffff99;
+	font-size:24px;
+}
+.port-links a:hover{color:white;}
+
 		
 
 /*------------portfolio end-----------*/
+/*------------team start----------*/
+
+.team .card-body{
+	position:relative;
+	color:#aaaaaa;
+}
+.team .card-title{
+	color:#124265;
+	font-weight:bold;
+	font-size:18px;
+}
+.team-links {
+	background:#ffffffbd;
+	position:absolute;
+	bottom:100%;
+	left:0;
+	width:100%;
+	visibility:hidden;
+	transition:all 0.3s ease;	
+}
+.team .card:hover .team-links{visibility:visible;}
+.team-links a{
+	text-decoration:none;
+	display:inline-block;
+	color:#124265;
+	padding:6px;
+	font-size:20px;
+}
+.team-links a:hover{color:#2487ce}
+/*-------------team end----------*/
 /*-------------pricing start----------*/
 .pricing-points,.highlight{
     padding: 40px 20px;
@@ -345,29 +447,7 @@ a.navbar-brand{
 	color:#2487ce;
 }
 /*------------pricing end-----------*/
-/*------------team start----------*/
-.card-body{
-	position:relative;
-}
-.team-links {
-	background:#ffffffbd;
-	position:absolute;
-	bottom:100%;
-	left:0;
-	width:100%;
-	visibility:hidden;
-	transition:all 0.3s ease;	
-}
-.card:hover .team-links{visibility:visible;}
-.team-links a{
-	text-decoration:none;
-	display:inline-block;
-	color:#124265;
-	padding:6px;
-	font-size:20px;
-}
-.team-links a:hover{color:#2487ce}
-/*-------------team end----------*/
+
 /*-------------question start----------*/
 
 .question{background-color: #f8fbfe;}
@@ -413,13 +493,15 @@ a.navbar-brand{
 	font-size:24px;
 	display:inline-block;
 	padding:10px;
-	background:#f3f9fd;
+	background:#e3f0fa;
+	border-radius:5px;
 }
 .contact{
-	top:10%;
-	left:14%;
+	top:16%;
+	left:16%;
 	font-size:16px;
 }
+.contact-section .color-btn{padding:10px 34px;}
 /*------------ contact ends-----------*/
 /*------------address starts-----------*/
 .address-team{
