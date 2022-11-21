@@ -1,0 +1,10 @@
+
+
+@media (min-width:992px){
+	.accordion{
+		width:80%;
+		margin:0 auto;
+	}
+	.banner .content h1{font-size:56px;}
+	.banner .content p{font-size:22px;}
+}

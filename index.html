@@ -1,74 +1,72 @@
 <!doctype html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width,inital-scale=1.0">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>template2</title>
-		<link rel="stylesheet" href="icon/icofont.min.css">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="icon/icofont.min.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/responsive.css">
 	</head>
-	<body>
-	<!-------header start--------------->
-		<header class="border-bottom">
+	<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
+									<!-------header start--------------->									
+		<header class="fixed-top bg-white">
 			<div class="container">
-				<nav class="navbar navbar-expand-lg bg-light">
-					 <div class="container-fluid">
+				<nav class="navbar navbar-expand-lg" id="navbar">					
 						<a class="navbar-brand " href="#">OnePage</a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						  <span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-							<ul class="navbar-nav align-items-center ">
+						 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+							<ul class="navbar-nav nav-pills">
 								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="#">Home</a>
+									<a class="nav-link" aria-current="page" href="#home">Home</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">About</a>
+									<a class="nav-link" href="#about">About</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Services</a>
+									<a class="nav-link" href="#services">Services</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Portfolio</a>
+									<a class="nav-link" href="#portfolio">Portfolio</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Team</a>
+									<a class="nav-link" href="#team">Team</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Pricing</a>
+									<a class="nav-link" href="#pricing">Pricing</a>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										Dropdown link
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Drop Dowm 1</a></li>
-										<li class="dropdown">
-											<a class="dropdown-item" href="#">Deep Drop Down</a>
-											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Drop Dowm 1</a></li>
+										<li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+										<li class="dropdown dropend">
+											<a class="btn dropdown-item dropdown-toggle dropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Deep Drop Down</a>
+											<ul class="dropdown-menu dropdown-menu2">
+												<li><a class="dropdown-item" href="#">Drop Down 1</a></li>
 												<li><a class="dropdown-item" href="#">Deep Drop Down</a></li>
-												<li><a class="dropdown-item" href="#">Drop Dowm 2</a></li>
-												<li><a class="dropdown-item" href="#">Drop Dowm 3</a></li>
-												<li><a class="dropdown-item" href="#">Drop Dowm 4</a></li>
+												<li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+												<li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+												<li><a class="dropdown-item" href="#">Drop Down 4</a></li>
 											</ul>
 										</li>
-										<li><a class="dropdown-item" href="#">Drop Dowm 2</a></li>
-										<li><a class="dropdown-item" href="#">Drop Dowm 3</a></li>
-										<li><a class="dropdown-item" href="#">Drop Dowm 4</a></li>
+										<li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+										<li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+										<li><a class="dropdown-item" href="#">Drop Down 4</a></li>
 									</ul>
 								</li>
 								<li class="nav-item me-3">
-									<a class="nav-link" href="#">contact</a>
+									<a class="nav-link" href="#contact">contact</a>
 								</li>
 								<li><a class="btn color-btn " href="#" role="button">Get Started</a></li>
 							</ul>
 						</div>
-					</div>
 				</nav>
 			</div>
 		</header>
@@ -115,7 +113,7 @@
 	</section>	
 				<!-------banner end--------------->
 			<!-------about start--------------->
-	<section class="about">
+	<section class="about"id="about">
 		<div class="container">
 			<div class="head-content">
 				<h2 class="heading">ABOUT US</h2>
@@ -142,7 +140,7 @@
 			
 			<!-------about end--------------->
 			<!------count start--------------->
-	<section class="count">
+	<section class="count"id="count">
 		<div class="container">
 			<div class="row">
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
@@ -175,11 +173,16 @@
 			<!-------count end--------------->
 						<!-------volume starts-------------->
 	<section class="volume">
-		<div class="container pt-5 pd-5">
+		<div class="container pt-5 pb-5">
 			<div class="row">
 				<div class="col-lg-6">
-					<div class="volume-img">
+					<div class="volume-img position-relative">
 						<img class="img-fluid " src="image/about-video.jpg" alt="girl-image">
+						<div class=" play-shadow position-absolute top-50 start-50 translate-middle">
+							<div class="play">
+								<i class="icofont-ui-play  position-absolute top-50 start-50 translate-middle"></i>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -189,8 +192,8 @@
 						<p><i class="icofont-check-alt pe-1"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p><i class="icofont-check-alt pe-1"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
 						<p><i class="icofont-check-alt pe-1"></i>Voluptate repellendus pariatur reprehenderit corporis sint.</p>
-						<p><i class="icofont-check-alt pe-1"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
-						<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+						<p class="position-relative ps-4"><i class="icofont-check-alt position-absolute start-0"></i><span class="ps-1">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></p>
+						<p class="pt-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 					</div>
 				</div>
 			</div>
@@ -200,12 +203,13 @@
 								<!-------client starts--------------->
 	<section class="client mt-5 mb-5">
 		<div class="container">
-			<div class="row ">
+			<div class="row owl-carouselone owl-theme ">
 				<div class="col-6 col-md-4 col-lg-2">
 					<div class="client-img">
 						<img class="img-fluid" src="image/clients/client-1.png" alt="client-name">
 					</div>
-				</div><div class="col-6 col-md-4 col-lg-2">
+				</div>
+				<div class="col-6 col-md-4 col-lg-2">
 					<div class="client-img">
 						<img class="img-fluid" src="image/clients/client-2.png" alt="client-name">
 					</div>
@@ -230,7 +234,7 @@
 						<img class="img-fluid" src="image/clients/client-6.png" alt="client-name">
 					</div>
 				</div>
-			</div>
+			</div> 
 		</div>
 	</section>	
 					<!-------client end--------------->
@@ -242,7 +246,7 @@
 				<p class="para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 			</div>
 			
-			<div class="row owl-carousel owl-theme text-center">
+			<div class=" owl-carousel owl-theme text-center">
 				<div class="item">
 					<div class="detail fst-italic">
 						<p><i class="icofont-quote-left"></i>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.<i class="icofont-quote-right"></i></p>
@@ -257,7 +261,7 @@
 				</div>
 				<div class="item">
 					<div class="detail fst-italic">
-						<p><i class="icofont-quote-left"></i>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.<i class="icofont-quote-right"></i></p>
+						<p><i class="icofont-quote-left"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa. <i class="icofont-quote-right"></i></p>
 					</div>
 					<div class="triangle">
 					</div>
@@ -281,7 +285,7 @@
 				</div>
 				<div class="item">
 					<div class="detail fst-italic">
-						<p><i class="icofont-quote-left"></i>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.<i class="icofont-quote-right"></i></p>
+						<p><i class="icofont-quote-left"></i> Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam. <i class="icofont-quote-right"></i></p>
 					</div>
 					<div class="triangle">
 					</div>
@@ -293,7 +297,7 @@
 				</div>
 				<div class="item">
 					<div class="detail fst-italic">
-						<p><i class="icofont-quote-left"></i>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid..<i class="icofont-quote-right"></i></p>
+						<p><i class="icofont-quote-left"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <i class="icofont-quote-right"></i></p>
 					</div>
 					<div class="triangle">
 					</div>
@@ -308,79 +312,76 @@
 	</section>			
 					<!-------testimonials end--------------->
 						<!-------services start--------------->
-	<section class="services">
+	<section class="services pt-3 pb-5 mb-4 " id="services">
 		<div class="container">
 			<div class="head-content">
 				<h2 class="heading">SERVICES</h2>
 				<p class="para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 			</div>
-			<div class="row">
-				<div class="col-lg-4">
+			<div class="row color-icon">
+				<div class="col-md-6 col-lg-4">
 					<div class="service-content">
 						<div class="irregular-shape">
-						<svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"> <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path> </svg>
-						
+							<svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"> <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path> </svg>
 							<i class="icofont-globe"></i>
 						</div>						
 						<h4>Lorem Ipsum</h4>
 						<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="service-content">
 						<div class="irregular-shape"><i class="icofont-papers"></i></div>						
 						<h4>Sed Perspiciatis</h4>
-						<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="service-content">
 						<div class="irregular-shape"><i class="icofont-clock-time"></i></div>						
 						<h4>Magni Dolores</h4>
-						<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="service-content">
 						<div class="irregular-shape"><i class="icofont-document-folder"></i></div>						
 						<h4>Nemo Enim</h4>
-						<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="service-content">
 						<div class="irregular-shape"><i class="icofont-play-alt-2"></i></div>						
 						<h4>Dele Cardo</h4>
-						<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+						<p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="service-content">
 						<div class="irregular-shape"><i class="icofont-building-alt"></i></div>						
 						<h4>Divera Don</h4>
-						<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+						<p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
 					</div>
-				</div>
-			
-			
+				</div>			
 			</div>
 		</div>
 	</section>									
 						<!-------services end--------------->
 						<!-------action section-------------->
-	<section class="action pd-5">
-		<div class="container pd-5">
+	<section class="action pt-3 pb-3">
+		<div class="container">
 			<div class="head-content">
 				<h2 class="heading">Call To Action</h2>
-				<p class="para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-				<a class="btn mb-3" href="#" role="button">Call To Action</a>
+				<p class="para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a class="btn outline-btn mt-3 mb-3" href="#" role="button">Call To Action</a>
 			</div>
 		</div>
 	</section>
 											<!-------action end--------------->
 						<!-------portfolio section starts-------------->
-	<section class="portfolio pd-5">
-		<div class="container pd-5">
+	<section class="portfolio pt-5 pb-5"id="portfolio">
+		<div class="container pb-5">
 			<div class="head-content">
 				<h2 class="heading">PORTFOLIO</h2>
 				<p class="para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
@@ -402,11 +403,21 @@
 			<div class="tab-content" id="pills-tabContent">
 			    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
 					<div class="row">
-							<div class="col-lg-4">
+						<div class="col-md-6 col-lg-4">
 								<div class="portfolio-images mb-4">
 									<img src="image/portfolio/portfolio-1.jpg" alt="portfolio-img" width="100%">
-									<div class="port-img">
-										
+									<div class="port-img">									
+										<div class="port-links">
+											<h4>App 1</h4>
+											<p>APP</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-images mb-4 d-lg-none">
+									<img src="image/portfolio/portfolio-7.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">									
 										<div class="port-links">
 											<h4>Card 2</h4>
 											<p>CARD</p>
@@ -417,25 +428,45 @@
 								</div>
 								<div class="portfolio-images mb-4">
 									<img src="image/portfolio/portfolio-6.jpg" alt="portfolio-img" width="100%">
-									<div class="port-img">
-										
+									<div class="port-img">										
 										<div class="port-links">
-											<h4>Card 2</h4>
+											<h4>App 3</h4>
+											<p>APP</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>	
+								<div class="portfolio-images mb-4 d-lg-none">
+									<img src="image/portfolio/portfolio-8.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">									
+										<div class="port-links">
+											<h4>Card 3</h4>
 											<p>CARD</p>
 											<a href="#"><i class="icofont-plus pe-2"></i></a>
 											<a href="#"><i class="icofont-link"></i></a>
 										</div>
 									</div>
-								</div>		
-							</div>
-							<div class="col-lg-4">
+								</div>
+						</div>	
+						<div class="col-md-6 col-lg-4">
 								<div class="portfolio-images mb-4">
 									<img src="image/portfolio/portfolio-4.jpg" alt="portfolio-img" width="100%">
-									<div class="port-img">
-										
+									<div class="port-img">										
 										<div class="port-links">
-											<h4>Card 2</h4>
+											<h4>Card 1</h4>
 											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-images mb-4 d-lg-none">
+									<img src="image/portfolio/portfolio-9.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">										
+										<div class="port-links">
+											<h4>Web 3</h4>
+											<p>WEB</p>
 											<a href="#"><i class="icofont-plus pe-2"></i></a>
 											<a href="#"><i class="icofont-link"></i></a>
 										</div>
@@ -446,8 +477,19 @@
 									<div class="port-img">
 										
 										<div class="port-links">
-											<h4>Card 2</h4>
-											<p>CARD</p>
+											<h4>Web 1</h4>
+											<p>WEB</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-images mb-4 d-lg-none">
+									<img src="image/portfolio/portfolio-3.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">										
+										<div class="port-links">
+											<h4>App 3</h4>
+											<p>APP</p>
 											<a href="#"><i class="icofont-plus pe-2"></i></a>
 											<a href="#"><i class="icofont-link"></i></a>
 										</div>
@@ -455,22 +497,20 @@
 								</div>
 								<div class="portfolio-images mb-4">
 									<img src="image/portfolio/portfolio-5.jpg" alt="portfolio-img" width="100%">
-									<div class="port-img">
-										
+									<div class="port-img">										
 										<div class="port-links">
-											<h4>Card 2</h4>
-											<p>CARD</p>
+											<h4>Web 2</h4>
+											<p>WEB</p>
 											<a href="#"><i class="icofont-plus pe-2"></i></a>
 											<a href="#"><i class="icofont-link"></i></a>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-lg-4">
+						</div>
+							<div class="col-lg-4 d-none d-lg-block">
 								<div class="portfolio-images mb-4">
 									<img src="image/portfolio/portfolio-7.jpg" alt="portfolio-img" width="100%">
-									<div class="port-img">
-										
+									<div class="port-img">									
 										<div class="port-links">
 											<h4>Card 2</h4>
 											<p>CARD</p>
@@ -481,10 +521,9 @@
 								</div>
 								<div class="portfolio-images mb-4">
 									<img src="image/portfolio/portfolio-8.jpg" alt="portfolio-img" width="100%">
-									<div class="port-img">
-										
+									<div class="port-img">									
 										<div class="port-links">
-											<h4>Card 2</h4>
+											<h4>Card 3</h4>
 											<p>CARD</p>
 											<a href="#"><i class="icofont-plus pe-2"></i></a>
 											<a href="#"><i class="icofont-link"></i></a>
@@ -493,11 +532,10 @@
 								</div>
 								<div class="portfolio-images mb-4">
 									<img src="image/portfolio/portfolio-9.jpg" alt="portfolio-img" width="100%">
-									<div class="port-img">
-										
+									<div class="port-img">										
 										<div class="port-links">
-											<h4>Card 2</h4>
-											<p>CARD</p>
+											<h4>Web 3</h4>
+											<p>WEB</p>
 											<a href="#"><i class="icofont-plus pe-2"></i></a>
 											<a href="#"><i class="icofont-link"></i></a>
 										</div>
@@ -505,11 +543,10 @@
 								</div>
 								<div class="portfolio-images mb-4">
 									<img src="image/portfolio/portfolio-3.jpg" alt="portfolio-img" width="100%">
-									<div class="port-img">
-										
+									<div class="port-img">										
 										<div class="port-links">
-											<h4>Card 2</h4>
-											<p>CARD</p>
+											<h4>App 3</h4>
+											<p>APP</p>
 											<a href="#"><i class="icofont-plus pe-2"></i></a>
 											<a href="#"><i class="icofont-link"></i></a>
 										</div>
@@ -519,45 +556,135 @@
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-					<div class="row portfolio-images">
-						<div class="col-lg-4">
-							<img src="image/portfolio/portfolio-1.jpg" alt="port-img" width="100%">
+					<div class="row justify-content-center">
+						<div class="col-md-6 col-lg-4">
+							<div class="portfolio-images mb-4">
+								<img src="image/portfolio/portfolio-1.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">									
+										<div class="port-links">
+											<h4>App 1</h4>
+											<p>APP</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+							</div>
 							
 						</div>
-						<div class="col-lg-4">
-							<img src="image/portfolio/portfolio-3.jpg" alt="port-img" width="100%">
+						<div class="col-md-6 col-lg-4 align-self-end">
+							<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-3.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">										
+										<div class="port-links">
+											<h4>App 3</h4>
+											<p>APP</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+							</div>
 							
 						</div>
-						<div class="col-lg-4">
-							<img src="image/portfolio/portfolio-6.jpg" alt="port-img" width="100%">
+						<div class="col-md-6 col-lg-4">
+							<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-6.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">										
+										<div class="port-links">
+											<h4>App 3</h4>
+											<p>APP</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+							</div>	
 						</div>
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-					<div class="row portfolio-images">
-						<div class="col-lg-4">
-							<img src="image/portfolio/portfolio-4.jpg" alt="port-img" width="100%">
+					<div class="row justify-content-center">
+						<div class="col-md-6 col-lg-4">
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-4.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">										
+										<div class="port-links">
+											<h4>Card 1</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>							
 						</div>
-						<div class="col-lg-4">
-							<img src="image/portfolio/portfolio-7.jpg" alt="port-img" width="100%">
-							
+						<div class="col-md-6 col-lg-4">
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-7.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">									
+										<div class="port-links">
+											<h4>Card 2</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
 						</div>
-						<div class="col-lg-4">
-							<img src="image/portfolio/portfolio-8.jpg" alt="port-img" width="100%">
+						<div class="col-md-6 col-lg-4">
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-8.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">									
+										<div class="port-links">
+											<h4>Card 3</h4>
+											<p>CARD</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>							
 						</div>
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab" tabindex="0">
-					<div class="row portfolio-images">
-						<div class="col-lg-4">
-							<img src="image/portfolio/portfolio-2.jpg" alt="port-img" width="100%">
+					<div class="row justify-content-center">
+						<div class="col-md-6 col-lg-4">
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-2.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">
+										
+										<div class="port-links">
+											<h4>Web 1</h4>
+											<p>WEB</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
 						</div>
-						<div class="col-lg-4">
-							<img src="image/portfolio/portfolio-5.jpg" alt="port-img" width="100%">
+						<div class="order-3 col-md-6 col-lg-4">
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-5.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">										
+										<div class="port-links">
+											<h4>Web 2</h4>
+											<p>WEB</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
 							
 						</div>
-						<div class="col-lg-4">
-							<img src="image/portfolio/portfolio-9.jpg" alt="port-img" width="100%">
+						<div class="order-2 col-md-6 col-lg-4">
+								<div class="portfolio-images mb-4">
+									<img src="image/portfolio/portfolio-9.jpg" alt="portfolio-img" width="100%">
+									<div class="port-img">										
+										<div class="port-links">
+											<h4>Web 3</h4>
+											<p>WEB</p>
+											<a href="#"><i class="icofont-plus pe-2"></i></a>
+											<a href="#"><i class="icofont-link"></i></a>
+										</div>
+									</div>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -570,14 +697,14 @@
 											
 
 													<!-------team starts--------------->
-	<section class="team pd-5">
-		<div class="container pd-5">
+	<section class="team" id="team">
+		<div class="container pb-5">
 			<div class="head-content">
 				<h2 class="heading">TEAM</h2>
 				<p class="para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 			</div>
 			<div class="row text-center">
-				<div class="mb-md-2 col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-3">
 					<div class="card h-100">
 						<img src="image/teams/team-1.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
@@ -592,7 +719,7 @@
 						</div>		
 					</div>
 				</div>
-				<div class="mb-md-2 col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-3">
 					<div class="card h-100">
 						<img src="image/teams/team-2.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
@@ -607,7 +734,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="mb-md-2 col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-3">
 					<div class="card h-100">
 						<img src="image/teams/team-3.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
@@ -622,7 +749,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="mb-md-2 col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-3">
 					<div class="card h-100">
 						<img src="image/teams/team-4.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
@@ -643,14 +770,14 @@
 	</section>													
 													<!-------team end--------------->	
 												<!-------pricing start--------------->	
-	<section class="pricing mb-5 ">
+	<section class="pricing mt-5 mb-5 " id="pricing">
 		<div class="container ">
 			<div class="head-content">
 				<h2 class="heading">PRICING</h2>
 				<p class="para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 			</div>
 			<div class="row text-center justify-content-center">
-				<div class="mb-3 col-md-6 col-lg-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="pricing-points">
 						<h5 class="mb-4">FREE</h5>
 						<p><span class="digit"><sup>$</sup>0</span>/month</p>
@@ -659,11 +786,11 @@
 						<p>Nulla at volutpat dola</p>
 						<p><s>Pharetra massa</s></p>
 						<p><s>Massa ultricies mi</s></p>
-						<a class="btn btn-outline-primary mt-4 mb-4" href="#" role="button">Buy Now</a>
+						<a class="btn outline-btn mt-4 mb-4" href="#" role="button">Buy Now</a>
 					</div>
 				</div>
-				<div class="mb-3 col-md-6 col-lg-4">
-					<div class=" highlight">
+				<div class="col-md-6 col-lg-4">
+					<div class="pricing-points highlight">
 						<h5 class="mb-4">BUSINESS</h5>
 						<p><span class="digit"><sup>$</sup>19</span>/month</p>
 						<p>Aida dere</p>
@@ -671,10 +798,10 @@
 							<p>Nulla at volutpat dola</p>
 							<p>Pharetra massa</p>
 							<p><s>Massa ultricies mi</s></p>
-						<a class="btn mt-4 mb-4" role="button" href="#">Buy Now</a>
+						<a class="btn outline-btn mt-4 mb-4" role="button" href="#">Buy Now</a>
 					</div>
 				</div>
-				<div class="mb-3 col-md-6 col-lg-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="pricing-points">
 						<h5 class="mb-4">DEVELOPER</h5>
 						<p><span class="digit"><sup>$</sup>29</span>/month</p>
@@ -683,7 +810,7 @@
 						<p>Nulla at volutpat dola</p>
 						<p>Pharetra massa</p>
 						<p>Massa ultricies mi</p>
-						<a class="btn btn-outline-primary mt-4 mb-4" role="button" href="#">Buy Now</a>
+						<a class="btn outline-btn mt-4 mb-4" role="button" href="#">Buy Now</a>
 					</div>
 				</div>
 			</div>
@@ -691,8 +818,8 @@
 	</section>			
 											<!-------pricing end--------------->														
 													<!-------question starts--------------->	
-	<section class="question pd-5">
-		<div class="container pd-5">
+	<section class="question pt-5 pb-5">
+		<div class="container">
 			<div class="head-content">
 				<h2 class="heading">FREQUENTLY ASKED QUESTIONS</h2>
 				<p class="para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
@@ -704,7 +831,7 @@
 							<i class="icofont-question-circle pe-2"></i>Non consectetur a erat nam at lectus urna duis?
 						</button>
 					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="questionOne" data-bs-parent="#accordionExample">
+					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="questionOne" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
 							<p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
 						</div>
@@ -764,42 +891,42 @@
 	</section>										
 											<!-------question end--------------->	
 									<!-------contact starts--------------->	
-	<section class="contact-section pd-5">
-		<div class="container pd-5">
+	<section class="contact-section pt-5 pb-5" id="contact">
+		<div class="container">
 			<div class="head-content">
-				<h2 class="heading">Contact</h2>
-				<p class="para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+				<h2 class="heading">CONTACT</h2>
+				<p class="para m-0">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 			</div>
 			<div class="map mb-5">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31108.406711556305!2d80.22043620807956!3d12.936564716236932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525cfbde1d0251%3A0xcafd9a078a3c9270!2sThoraipakkam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1668064946154!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31108.406711556305!2d80.22043620807956!3d12.936564716236932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525cfbde1d0251%3A0xcafd9a078a3c9270!2sThoraipakkam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1668064946154!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
-			<div class="row">
+			<div class="row align-items-baseline">
 				<div class="col-lg-4">
-					<div class="col">
-						<div class="contact-me pt-3 pb-3 position-relative">
+					<div class="d-flex pt-2">
+						<div class=" contact-me ">
 							<i class="icofont-google-map "></i>
-							<div class="contact position-absolute">
-								<h5>Location:</h5>
-								<p>A108 Adam Street, New York, NY 535022</p>
-							</div>
+						</div>
+						<div class="ps-3 contact">
+							<h5>Location:</h5>
+							<p>A108 Adam Street, New York, NY 535022</p>
 						</div>
 					</div>
-					<div class="col">
-						<div class="contact-me pt-3 pb-3  position-relative">
+					<div class="d-flex pt-2">
+						<div class="contact-me">
 							<i class="icofont-email"></i>
-							<div class="contact position-absolute">
-								<h5>Email:</h5>
-								<p>info@example.com</p>
-							</div>
-						</div>	
+						</div>
+						<div class="ps-3 contact">
+							<h5>Email:</h5>
+							<p>info@example.com</p>
+						</div>
 					</div>
-					<div class="col">
-						<div class="contact-me pt-3 pb-3 position-relative">
+					<div class="d-flex pt-2">
+						<div class="contact-me">
 							<i class="icofont-smart-phone"></i>
-							<div class="contact position-absolute">
-								<h5>Call:</h5>
-								<p>+1 5589 55488 55s</p>
-							</div>
+						</div>
+						<div class="ps-3 contact">
+							<h5>Call:</h5>
+							<p>+1 5589 55488 55s</p>
 						</div>
 					</div>
 				</div>
@@ -807,13 +934,13 @@
 					<form action="" method="post">
 						<div class="row">
 							<div class="col-sm-6">
-								<input class="form-control mb-3" type="text" placeholder="Your Name" aria-label="default input example">
+								<input class="form-control mb-3" type="text" placeholder="Your Name" aria-label="default input example" required>
 							</div>
 							<div class="col-sm-6">
 								<input class="form-control mb-3" type="email" placeholder="Your Email" aria-label="default input example">
 							</div>
 							<div><input class="form-control mb-3" type="text" placeholder="Subject" aria-label="default input example"></div>
-							<div><textarea class="form-control mb-3" placeholder="Message" id="exampleFormControlTextarea1" rows="5"></textarea></div>
+							<div><textarea class="form-control mb-5" placeholder="Message" id="exampleFormControlTextarea1" rows="5"></textarea></div>
 							<div class="text-center"><button type="submit" class="btn color-btn mb-3">Send Message</button></div>
 						</div>
 					</form>
@@ -826,7 +953,7 @@
 	<section class="address pt-5 pb-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-md-6 col-lg-3">
 					<div class="address-team">
 						<h3>OnePage</h3>
 						<p>A108 Adam Street<br>
@@ -837,7 +964,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-2">
+				<div class="col-md-6 col-lg-2">
 					<div class="address-links">
 						<h5>Useful Links</h5>
 						<ul class="">
@@ -849,9 +976,9 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-md-6 col-lg-3">
 					<div class="address-links">
-						<h5>Services</h5>
+						<h5>Our Services</h5>
 						<ul>
 							<li><i class="icofont-simple-right pe-1"></i><a href="#">Web Design</a></li>
 							<li><i class="icofont-simple-right pe-1"></i><a href="#">Web Development</a></li>
@@ -861,14 +988,14 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="address-links">
 						<h5>Join Our Newsletter</h5>
-						<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+						<p class="pt-3 pb-3">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
 						<form action="" method="post">
 							<div class="input-group mb-3">
 								<input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
-								<button class="btn" type="button" id="button-addon2">Subscribe</button>
+								<button class="btn color-btn" type="button" id="button-addon2">Subscribe</button>
 							</div>
 						</form>
 					</div>
@@ -879,16 +1006,16 @@
 											<!-------address end--------------->
 
 										<!------footer starts--------------->		
-	<section class="footer">
+	<footer class="footer pt-3 pb-3">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="copyright">
-						<p>© Copyright <b>OnePage.</b> All Rights Reserved<br>
+				<div class="col-md-6 col-lg-6">
+					<div class="copyright text-center text-md-start">
+						<p class="lh-lg">© Copyright <b>OnePage.</b> All Rights Reserved<br>
 						Designed by <span>BootstrapMade</span></p>
 					</div>
 				</div>
-				<div class="col-lg-6 text-end">
+				<div class="col-md-6 col-lg-6 text-center text-md-end">
 					<a href="#"><i class="icofont-twitter"></i></a>
 					<a href="#"><i class="icofont-facebook"></i></a>
 					<a href="#"><i class="icofont-instagram"></i></a>
@@ -898,31 +1025,39 @@
 				</div>
 			</div>
 		</div>
-	</section>										
+	</footer>										
 										<!-------footer end--------------->		
 
 								<!-------js file--------------->	
 
-	<script src="js/jquery/jquery-3.6.1.min.js"></script>									
+	<script src="js/jquery/jquery-3.6.1.min.js"></script>								
 	<script src="js/owl.carousel.min.js"></script>	
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script>
-		$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})
+	<script>	
+	    $('.owl-carousel').owlCarousel({
+        loop:true,
+		center:true,
+        margin:10,
+		autoplay:true,
+		autoplayTimeout:5000,
+        URLhashListener:true,
+		startPosition: 'URLHash',
+        autoplayHoverPause:true,
+		responsiveClass:true,	
+		responsive:{
+			0:{
+				items:1,
+			},
+			768:{
+				items:2,				
+				center:false,
+			},
+			992:{
+				items:3,
+			}
+		}
+        
+		})
 	</script>
 	
 	
