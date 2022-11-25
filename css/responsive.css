@@ -1,54 +1,6 @@
 
 @media (max-width:576px){
-	.navbar-collapse{ 
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		background: #384e65eb;
-		padding: 76px 23px 25px 23px;
-		width: 100%;
-		transform:translateX(-100%);
-		transition:all .5s ease;
-		transition-delay:0.5s;
-		overflow:hidden;
-		
-	}
-	.navbar-collapse.active{
-		transform:translateX(0%);
-		transition-delay:0s;
-	}
-	
-	#mb-btn{
-		position: relative;
-		z-index: 1000;
-	}
-	#mb-btn span i{
-		display:none;
-	}
-	#mb-btn span #close-icon{
-		color:#fff;
-	}
-	#mb-btn span i.active{
-		display:inline;
-	}	
-	.navbar-nav{
-		padding: 18px 38px;
-		height:100%;
-		background:white;
-		line-height:30px;
-		transform:translateX(120%);
-		transition:all .5s ease;
-		transition-delay:0s;
-	}
-	.navbar-collapse.active .navbar-nav{
-		transform:translateX(0%);
-		transition-delay:0.5s;
-	}
-	.navbar-nav .btn{
-		width:100%;
-		margin-top:10px;
-	}
+
 } 
 @media (min-width:768px){
 	.head-content{
