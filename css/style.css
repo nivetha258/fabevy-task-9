@@ -74,7 +74,6 @@ a.navbar-brand{
 .dropdown-menu{
 	border:none;
 	box-shadow:0 0 29px #12426514;
-	min-width:unset;
 	max-width:180px;
 }
 .dropdown-item {padding: 0.35rem 1rem;}
@@ -120,6 +119,8 @@ a.navbar-brand{
 	transform:translateX(0);
 }
 /*-------------header end----------*/
+
+
 /*-------------banner start----------*/
 .banner{
 	background-image:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url(../image/hero-bg.jpg);
@@ -173,6 +174,8 @@ a.navbar-brand{
 	font-size:15px;
 }
 /*-------------banner end----------*/
+
+
 /*-------------ABOUT start----------*/
 .about{
 	padding-bottom:50px;
@@ -196,6 +199,8 @@ a.navbar-brand{
 	color:white;
 }
 /*-------------about end----------*/
+
+
 /*-------------count starts----------*/
 .count{
 		padding:60px 0;
@@ -375,6 +380,8 @@ a.navbar-brand{
 }
 
 /*-------------services end----------*/
+
+
 /*-------------action start----------*/
 .action{
 	background: #2487ce;
@@ -395,6 +402,8 @@ a.navbar-brand{
 	color:#2487ce;
 }
 /*------------action end-----------*/
+
+
 /*-------------portfolio start----------*/
 .portfolio .nav-pills .nav-link.active{
     color:#2487ce;
@@ -419,7 +428,7 @@ a.navbar-brand{
 	transform:translate(-10px,-10px);
 	transition:all 1.1s ease-out;
 }
-.portfolio-images:hover .port-img:after{right:20px;bottom:20px;}
+.portfolio-images:hover .port-img:after{right:15px;bottom:15px;}
 .portfolio-images img{
 		display:block;
 }
@@ -476,6 +485,8 @@ a.navbar-brand{
 }
 .port-links a:hover{color:white;}
 /*------------portfolio end-----------*/
+
+
 /*------------team start----------*/
 .team{background-color: #f8fbfe;}
 .team .card{
@@ -635,14 +646,18 @@ a.navbar-brand{
 .address-links .color-btn{
 	padding:12px 26px;
 }
+.address-links a:hover{color:#2487ce;}
 /*------------ address ends-----------*/
 /*------------ footer starts-----------*/
 .footer{
 	background:#f8fbfe;
 	font-size:14px;
 }
-.copyright span{color:#3194db;}
-.footer a{
+.copyright span a{
+	color:#2487ce;
+	text-decoration:none;
+}
+.footer .media-contact a{
 	display:inline-block;
 	padding:5px 9px;
 	background:#2487ce;
@@ -651,14 +666,14 @@ a.navbar-brand{
 	color:white;
 	border-radius:5px;
 }
-.footer a:hover{
+.footer .edia-contact a:hover{
 	background-color:#3194db;
 }
 a.scroll-up{
 	font-size:24px;
 	padding:0 5px;
 	right:10px;
-	bottom:10px;
+	bottom:40px;
 }
 /*------------ footer ends-----------*/
 

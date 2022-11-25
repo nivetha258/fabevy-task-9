@@ -17,10 +17,13 @@
 			<div class="container">
 				<nav class="navbar navbar-expand-lg">					
 						<a class="navbar-brand " href="#">OnePage</a>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"><i class="icofont-navigation-menu"></i></span>
+						<button class="navbar-toggler" id="mb-btn">
+							<span class="navbar-toggler-icon">
+								<i class="icofont-navigation-menu active" id="bar-icon"></i>
+								<i class="icofont-close " id="close-icon"></i>
+							</span>
 						</button>
-						 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+						 <div class=" navbar-collapse justify-content-end" id="mb-menu">
 							<ul class="navbar-nav nav-pills" id="navbar">
 								<li class="nav-item">
 									<a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -1028,17 +1031,18 @@
 			<div class="row">
 				<div class="col-md-6 col-lg-6">
 					<div class="copyright text-center text-md-start">
-						<p class="lh-lg">© Copyright <b>OnePage.</b> All Rights Reserved<br>
-						Designed by <span>BootstrapMade</span></p>
+						<p>Designed by <span><a href="#">Nivetha Rajendran</a></span></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-6 text-center text-md-end">
-					<a href="#"><i class="icofont-twitter"></i></a>
-					<a href="#"><i class="icofont-facebook"></i></a>
-					<a href="#"><i class="icofont-instagram"></i></a>
-					<a href="#"><i class="icofont-skype"></i></a>
-					<a href="#"><i class="icofont-linkedin"></i></a>	
-					<a href="#" class="scroll-up position-fixed "><i class="icofont-long-arrow-up"></i></a>		
+					<div class="media-contact">
+						<a href="#"><i class="icofont-twitter"></i></a>
+						<a href="#"><i class="icofont-facebook"></i></a>
+						<a href="#"><i class="icofont-instagram"></i></a>
+						<a href="#"><i class="icofont-skype"></i></a>
+						<a href="#"><i class="icofont-linkedin"></i></a>	
+						<a href="#" class="scroll-up position-fixed "><i class="icofont-long-arrow-up"></i></a>		
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1097,6 +1101,15 @@
 			}
         
 		})
+		
+		let mbBtn = document.getElementById("mb-btn");
+		let mbMenu = document.getElementById("mb-menu");
+		mbBtn.addEventListener("click", function(){
+			mbMenu.classList.toggle("active");
+			document.getElementById("bar-icon").classList.toggle("active");
+			document.getElementById("close-icon").classList.toggle("active");
+		})
+		
 	</script>
 	
 	
