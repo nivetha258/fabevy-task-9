@@ -52,7 +52,7 @@
 		transition-delay:0.5s;
 	}
 	.active-mb-menu .navbar-nav .btn{
-		width:100%;
+		width:50vw;
 		margin-top:10px;
 	}
 	.banner .content{
